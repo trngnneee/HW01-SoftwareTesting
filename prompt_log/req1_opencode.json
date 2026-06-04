@@ -1,0 +1,186 @@
+{
+  "session": {
+    "student_name": "Dang Truong Nguyen",
+    "student_id": "23127438",
+    "date": "2026-06-02",
+    "task": "Requirement 1: QA/QC Job Market 2026+ — Find 10 QA/QC job postings on topcv.vn published within 60 days, ≥3 requiring AI/LLM/automation-AI skills",
+    "model": "DeepSeek V4 Flash Free"
+  },
+  "actions": [
+    {
+      "step": 1,
+      "action": "Search & scrape topcv.vn for QA/QC jobs",
+      "tool": "Firecrawl API (v2/search + v2/scrape)",
+      "description": "Searched topcv.vn for QA/QC job listings using Firecrawl search and scraped individual job pages for full details (description, requirements, salary, deadline)."
+    },
+    {
+      "step": 2,
+      "action": "Initial 10 jobs identified",
+      "description": "Identified 10 QA/QC jobs from topcv.vn. Jobs 2-7 required AI/LLM/automation-AI skills."
+    },
+    {
+      "step": 3,
+      "action": "Update 23127438.md with Jobs 2-7",
+      "description": "Filled in Jobs 2-7 with scraped data (description, required skills, salary, screenshot)."
+    },
+    {
+      "step": 4,
+      "action": "Replace Job 3",
+      "description": "Replaced Job 3 (Automation QC AI Product) with Senior QC Engineer - Warehouse (2182447) per user request."
+    },
+    {
+      "step": 5,
+      "action": "Replace Job 6",
+      "description": "Replaced Job 6 (QA Engineer Automation) with Software Testing Engineer - Manual Tester (2181996) per user request."
+    },
+    {
+      "step": 6,
+      "action": "Replace Job 5",
+      "description": "Replaced Job 5 (Senior QA/QC Engineer) with Manual Test Engineer Middle-Senior (2158658) per user request."
+    },
+    {
+      "step": 7,
+      "action": "Add Jobs 8, 9, 10",
+      "description": "Added 3 more jobs: QA Intern (1649912), Quality Assurance SaaS (2151608), QA Engineer Data Platform AWS ETL (2149906)."
+    },
+    {
+      "step": 8,
+      "action": "Translate all 10 jobs to English",
+      "description": "Translated all Vietnamese content (descriptions, requirements, titles) to English across all 10 jobs."
+    },
+    {
+      "step": 9,
+      "action": "Add AI Impact Analysis",
+      "description": "Added 1-2 sentence AI Impact Analysis per job post, analyzing how AI/automation affects each role."
+    },
+    {
+      "step": 10,
+      "action": "Export session JSON",
+      "description": "Exported this session summary to /prompt_log/req1.json"
+    }
+  ],
+  "jobs": [
+    {
+      "job_number": 1,
+      "title": "QA Manager – Backpack / Technical Bags Manufacturer",
+      "url": "https://www.topcv.vn/viec-lam/qa-manager-backpack-technical-bags-manufactur/2068986.html",
+      "deadline": "17/06/2026",
+      "requires_ai_skills": false,
+      "screenshot": "./images/job1.png",
+      "ai_impact": "AI-powered defect prediction and automated visual inspection systems are reducing manual QC checks, but this role's focus on ISO compliance, supplier auditing, and cross-functional leadership remains resilient. AI serves as a force multiplier for data analysis and KPI tracking rather than a replacement."
+    },
+    {
+      "job_number": 2,
+      "title": "Lead QA/QC (Exp AI)",
+      "url": "https://www.topcv.vn/viec-lam/lead-qa-qc-exp-ai/2169227.html",
+      "deadline": "18/06/2026",
+      "requires_ai_skills": true,
+      "screenshot": "./images/job2.png",
+      "ai_skills_detail": [
+        "Must use AI tools for testing: Cursor, GitHub Copilot, Claude/ChatGPT",
+        "LLM evaluation frameworks: DeepEval, Ragas, LangSmith, Promptfoo",
+        "Transition roadmap to AI Quality Engineer / LLM Evaluation Engineer in 12-18 months",
+        "ML/AI project experience"
+      ],
+      "ai_impact": "This role explicitly requires AI tool proficiency (Cursor, Copilot, LLM evaluation frameworks), positioning it at the forefront of AI-driven QA. The job itself is adapting to include AI evaluation as a core competency rather than an auxiliary skill."
+    },
+    {
+      "job_number": 3,
+      "title": "Senior QC Engineer - Warehouse",
+      "url": "https://www.topcv.vn/viec-lam/senior-qc-engineer-warehouse/2182447.html",
+      "deadline": "28/06/2026",
+      "requires_ai_skills": true,
+      "screenshot": "./images/job3.png",
+      "ai_skills_detail": [
+        "Apply AI/Agentic AI tools for test generation, validation, and optimization",
+        "Strong interest in applying AI/LLM/Agentic AI tools",
+        "Experience with Cursor, Claude, GitHub Copilot, ChatGPT highly preferred"
+      ],
+      "ai_impact": "AI/Agentic AI tools are embedded into every phase of testing — from test generation to defect analysis — making this role a hybrid of traditional QC and AI prompt engineering. The demand for engineers who can validate AI outputs and red-team AI systems is growing rapidly."
+    },
+    {
+      "job_number": 4,
+      "title": "Senior QC (Automation)",
+      "url": "https://www.topcv.vn/viec-lam/senior-qc-automation/2167401.html",
+      "deadline": "17/06/2026",
+      "requires_ai_skills": true,
+      "screenshot": "./images/job4.png",
+      "ai_skills_detail": [
+        "AI testing tools: LLM evaluation, synthetic data",
+        "AI Data Quality Assurance: training data validation, bias/fairness, security compliance",
+        "AI behavior testing, edge case analysis for AI products"
+      ],
+      "ai_impact": "AI tools (LLM evaluation, synthetic data) are directly incorporated into the testing workflow, requiring the engineer to validate AI behavior alongside traditional functionality. This signals a shift where even automation-focused QC roles must now understand AI model risks and data fairness."
+    },
+    {
+      "job_number": 5,
+      "title": "Manual Test Engineer (Middle - Senior)",
+      "url": "https://www.topcv.vn/viec-lam/manual-test-engineer-middle-senior/2158658.html",
+      "deadline": "12/06/2026",
+      "requires_ai_skills": false,
+      "screenshot": "./images/job5.png",
+      "ai_impact": "Although titled 'Manual Test,' the role demands automation scripting and CI/CD integration, reflecting how AI-assisted test generation tools (Copilot, ChatGPT) are raising the baseline expectation even for manual testers. Pure manual testing without automation skills is becoming less viable."
+    },
+    {
+      "job_number": 6,
+      "title": "Software Testing Engineer - Manual Tester (Salary $700-$900)",
+      "url": "https://www.topcv.vn/viec-lam/ky-su-kiem-thu-phan-mem-manual-tester-salary-700-900/2181996.html",
+      "deadline": "29/06/2026",
+      "requires_ai_skills": false,
+      "screenshot": "./images/job6.png",
+      "ai_impact": "This entry-level manual testing role has the least AI exposure, but AI-powered test case generators and low-code automation platforms are gradually reducing demand for pure manual testing. Upskilling toward automation or AI testing tools would be essential for long-term career growth."
+    },
+    {
+      "job_number": 7,
+      "title": "QA/QC Department Head (Mechanical Engineering, Automation) Thu Duc",
+      "url": "https://www.topcv.vn/viec-lam/truong-phong-chat-luong-qa-qc-co-khi-tu-dong-hoa-thu-duc/2121904.html",
+      "deadline": "15/06/2026",
+      "requires_ai_skills": true,
+      "screenshot": "./images/job7.png",
+      "ai_skills_detail": [
+        "Electrical - Automation engineering background preferred",
+        "ISO 9001-2025 standards implementation",
+        "Automation in mechanical manufacturing context"
+      ],
+      "ai_impact": "AI-driven predictive maintenance and computer vision are transforming mechanical QC, but this management role's emphasis on ISO systems, team leadership, and supplier coordination remains largely human-centric. AI augments data consolidation and reporting but does not replace the strategic oversight this position requires."
+    },
+    {
+      "job_number": 8,
+      "title": "QA Intern",
+      "url": "https://www.topcv.vn/viec-lam/thuc-tap-sinh-qa/1649912.html",
+      "deadline": "26/06/2026",
+      "requires_ai_skills": false,
+      "screenshot": "./images/job8.png",
+      "ai_impact": "As a junior entry point, this internship is less immediately affected by AI, though familiarity with AI-augmented test management tools is becoming a differentiator. The foundational QA process skills learned here will remain valuable as AI shifts the tester's role from execution to oversight."
+    },
+    {
+      "job_number": 9,
+      "title": "Quality Assurance (SaaS)",
+      "url": "https://www.topcv.vn/viec-lam/quality-assurance-saas/2151608.html",
+      "deadline": "01/07/2026",
+      "requires_ai_skills": false,
+      "screenshot": "./images/job9.png",
+      "ai_impact": "Operating in the SaaS domain, this QA role is moderately impacted by AI — AI-driven test orchestration and synthetic data generation can automate regression suites, but the need for human judgment in requirement analysis, risk assessment, and UX-centered testing persists. Shift-left practices combined with AI tools are the emerging norm."
+    },
+    {
+      "job_number": 10,
+      "title": "QA Engineer (Data Platform - AWS - ETL)",
+      "url": "https://www.topcv.vn/viec-lam/qa-engineerdata-platform-aws-etl/2149906.html",
+      "deadline": "06/06/2026",
+      "requires_ai_skills": false,
+      "screenshot": "./images/job10.png",
+      "ai_impact": "AI/ML models are increasingly used for data pipeline monitoring and anomaly detection, which can automate parts of ETL validation. However, this role's deep reliance on SQL, AWS infrastructure knowledge, and domain expertise in banking data systems means AI acts as a productivity accelerator rather than a replacement."
+    }
+  ],
+  "ai_job_count": 4,
+  "total_jobs": 10,
+  "processed_file": "23127438.md",
+  "screenshots_dir": "./images/",
+  "tools_used": [
+    "Firecrawl API (v2/search - web search with scrape)",
+    "Firecrawl API (v2/scrape - full page content extraction + screenshots)",
+    "File editing (edit tool)",
+    "File reading (read tool)",
+    "File writing (write tool)"
+  ]
+}

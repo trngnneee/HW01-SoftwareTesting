@@ -1,0 +1,226 @@
+{
+  "session": {
+    "student_name": "Dang Truong Nguyen",
+    "student_id": "23127438",
+    "date": "2026-06-05",
+    "task": "Requirement 2: 20 Software Defects 2022–2026 — Find 20 software defects (≥5 AI/LLM-related), each with source link, description, severity, consequences, solution, and 1 identified AI bias/hallucination instance.",
+    "model": "DeepSeek V4 Flash Free"
+  },
+  "actions": [
+    {
+      "step": 1,
+      "action": "Web search for major software defects 2022-2026",
+      "tool": "WebSearch (deep)",
+      "description": "Searched for major software defects across 2022-2026 including CrowdStrike, Log4Shell, XZ backdoor, Citrix Bleed, Tesla Autopilot, Boeing MCAS, and AI/LLM incidents."
+    },
+    {
+      "step": 2,
+      "action": "Web search for AI/LLM-specific defects",
+      "tool": "WebSearch (deep)",
+      "description": "Searched for AI hallucination, prompt injection, and bias incidents including ChatGPT lawyer fake cases, Google Gemini bias, Apple Intelligence errors, Air Canada chatbot liability, EchoLeak, and many-shot jailbreaking."
+    },
+    {
+      "step": 3,
+      "action": "Web search for automotive and hardware defects",
+      "tool": "WebSearch (deep)",
+      "description": "Searched details for Tesla Autopilot recall, Toyota brake software defect, AMD Zen 2 information leak, and Boeing 737 MAX MCAS."
+    },
+    {
+      "step": 4,
+      "action": "Web search for Apple Intelligence bias study and ChatGPT defamation case",
+      "tool": "WebSearch (deep)",
+      "description": "Searched for the AI Forensics Apple Intelligence bias study (2026), the Mark Walters v. OpenAI defamation case, and supplementary details on prompt injection vulnerabilities."
+    },
+    {
+      "step": 5,
+      "action": "Write comprehensive 20-defect markdown file",
+      "tool": "Write file",
+      "description": "Created 20_Software_Defects_2022_2026.md with all 20 defects organized in table format with AI bias/hallucination annotations."
+    },
+    {
+      "step": 6,
+      "action": "Merge content into 23127438.md",
+      "tool": "Edit file",
+      "description": "Merged all 20 defects into the existing 23127438.md following the established format (Defect N: source link, description, severity, consequences, solution, AI bias/hallucination)."
+    },
+    {
+      "step": 7,
+      "action": "Export session JSON",
+      "tool": "Write file",
+      "description": "Exported this session summary to prompt_log/req2.json"
+    }
+  ],
+  "defects": [
+    {
+      "number": 1,
+      "name": "CrowdStrike Falcon BSOD Global Outage",
+      "year": 2024,
+      "type": "Non-AI (memory corruption)",
+      "source": "https://www.crowdstrike.com/wp-content/uploads/2024/08/Executive-Summary_Root-Cause-Analysis_Channel-File-291.pdf",
+      "severity": "Critical – 8.5M devices crashed; $5.4B losses"
+    },
+    {
+      "number": 2,
+      "name": "Log4Shell – Apache Log4j RCE",
+      "year": "2021–2022",
+      "type": "Non-AI (RCE vulnerability)",
+      "source": "https://nvd.nist.gov/vuln/detail/CVE-2021-44228",
+      "severity": "Critical – CVSS 10.0; billions of devices affected"
+    },
+    {
+      "number": 3,
+      "name": "XZ Utils Backdoor – Supply Chain Attack",
+      "year": 2024,
+      "type": "Non-AI (supply chain)",
+      "source": "https://securelist.com/xz-backdoor-story-part-1/112354/",
+      "severity": "Critical – CVSS 10.0; major Linux distros compromised"
+    },
+    {
+      "number": 4,
+      "name": "Citrix Bleed – Comcast Xfinity Data Breach",
+      "year": 2023,
+      "type": "Non-AI (session hijacking)",
+      "source": "https://www.cloudskope.com/breaches/comcast-xfinity-data-breach-2023",
+      "severity": "Critical – CVSS 9.4; 35.9M records exposed"
+    },
+    {
+      "number": 5,
+      "name": "Tesla Autopilot Recall – 2M Vehicles",
+      "year": 2023,
+      "type": "Non-AI (ADAS software)",
+      "source": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V838-8276.PDF",
+      "severity": "High – 2,031,220 vehicles; 13+ fatal crashes"
+    },
+    {
+      "number": 6,
+      "name": "Boeing 737 MAX MCAS – Fatal Flight Control Defect",
+      "year": "2020–2024",
+      "type": "Non-AI (flight control software)",
+      "source": "https://www.seattletimes.com/seattle-news/times-watchdog/the-inside-story-of-mcas-how-boeings-737-max-system-gained-power-and-lost-safeguards/",
+      "severity": "Catastrophic – 346 deaths; $20B+ cost"
+    },
+    {
+      "number": 7,
+      "name": "Toyota Corolla Cross Hybrid Brake Software Defect",
+      "year": 2024,
+      "type": "Non-AI (automotive software)",
+      "source": "https://static.nhtsa.gov/odi/rcl/2024/RCAK-24V708-2799.pdf",
+      "severity": "High – 42,199 vehicles recalled"
+    },
+    {
+      "number": 8,
+      "name": "Microsoft SharePoint Server Deserialization RCE",
+      "year": 2025,
+      "type": "Non-AI (RCE vulnerability)",
+      "source": "https://nvd.nist.gov/vuln/detail/CVE-2025-53770",
+      "severity": "Critical – CVSS 9.8; active global exploitation"
+    },
+    {
+      "number": 9,
+      "name": "AMD Zen 2 Information Leak – VZEROUPPER",
+      "year": 2023,
+      "type": "Non-AI (hardware microcode)",
+      "source": "https://github.com/google/security-research/security/advisories/GHSA-v6wh-rxpg-cmm8",
+      "severity": "High – CVSS 7.1; cross-VM leakage on EPYC"
+    },
+    {
+      "number": 10,
+      "name": "PHP mysqlnd Heap Buffer Over-read",
+      "year": 2024,
+      "type": "Non-AI (information disclosure)",
+      "source": "https://github.com/php/php-src/security/advisories/GHSA-h35g-vwh6-m678",
+      "severity": "Medium-High – CVSS 6.6"
+    },
+    {
+      "number": 11,
+      "name": "Palo Alto PAN-OS Out-of-bounds Write",
+      "year": 2024,
+      "type": "Non-AI (memory corruption)",
+      "source": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "severity": "Critical – CVSS 10.0; nation-state exploitation"
+    },
+    {
+      "number": 12,
+      "name": "ChatGPT Lawyer Fake Cases – AI Hallucination in Court",
+      "year": 2023,
+      "type": "AI – Hallucination",
+      "source": "https://www.legaldive.com/news/chatgpt-fake-legal-cases-generative-ai-hallucinations/651557/",
+      "severity": "Medium – $5,000 fine; ethical sanctions"
+    },
+    {
+      "number": 13,
+      "name": "Google Gemini – Race-swapped Historical Images",
+      "year": 2024,
+      "type": "AI – Bias",
+      "source": "https://blog.google/products-and-platforms/products/gemini/gemini-image-generation-issue/",
+      "severity": "Medium – PR crisis; feature paused"
+    },
+    {
+      "number": 14,
+      "name": "Apple Intelligence – Fake News Summaries",
+      "year": 2025,
+      "type": "AI – Hallucination",
+      "source": "https://www.bbc.com/news/articles/cq5ggew08eyo",
+      "severity": "Medium – Misinformation attributed to news brands"
+    },
+    {
+      "number": 15,
+      "name": "Air Canada Chatbot Hallucination – Legal Liability",
+      "year": 2024,
+      "type": "AI – Hallucination/Liability",
+      "source": "https://www.bbc.com/travel/article/20240222-air-canada-chatbot-misinformation-what-travellers-should-know",
+      "severity": "Low-Medium – CAD $812 award; precedent-setting"
+    },
+    {
+      "number": 16,
+      "name": "OpenAI ChatGPT Defamation – Mark Walters",
+      "year": "2023–2025",
+      "type": "AI – Hallucination/Defamation",
+      "source": "https://www.abajournal.com/web/article/creator-of-chatgpt-isnt-liable-for-embezzlement-hallucinations",
+      "severity": "Medium – Defamation lawsuit; dismissed"
+    },
+    {
+      "number": 17,
+      "name": "Apple Intelligence – Systematic Bias Study",
+      "year": 2026,
+      "type": "AI – Bias",
+      "source": "https://the-decoder.com/apple-intelligence-pushes-hallucinated-stereotypes-to-millions-of-devices-unprompted/",
+      "severity": "Medium – Systematic bias on millions of devices"
+    },
+    {
+      "number": 18,
+      "name": "EchoLeak – Microsoft 365 Copilot Zero-Click Prompt Injection",
+      "year": 2025,
+      "type": "AI – Prompt Injection",
+      "source": "https://arxiv.org/html/2509.10540",
+      "severity": "Critical – CVE-2025-32711; zero-click data exfiltration"
+    },
+    {
+      "number": 19,
+      "name": "GPT-4 Fine-tuning API – Safety Guardrail Bypass",
+      "year": 2023,
+      "type": "AI – Security",
+      "source": "https://arxiv.org/abs/2312.14302",
+      "severity": "Critical – Safety alignment subversion"
+    },
+    {
+      "number": 20,
+      "name": "Many-shot Jailbreaking – Long-context Attack",
+      "year": 2024,
+      "type": "AI – Jailbreak/Security",
+      "source": "https://proceedings.neurips.cc/paper_files/paper/2024/file/ea456e232efb72d261715e33ce25f208-Paper-Conference.pdf",
+      "severity": "High – Systematic safety bypass"
+    }
+  ],
+  "ai_defect_count": 9,
+  "non_ai_defect_count": 11,
+  "total_defects": 20,
+  "ai_bias_hallucination_instances": 20,
+  "processed_file": "23127438.md",
+  "tools_used": [
+    "WebSearch (deep) – multiple queries",
+    "Read file (read tool)",
+    "Write file (write tool)",
+    "Edit file (edit tool)"
+  ]
+}
